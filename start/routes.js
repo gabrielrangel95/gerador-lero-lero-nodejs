@@ -16,6 +16,10 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
+Route.group(() => {
+  Route.resource('lero-lero', 'LeroLeroController').apiOnly()
+})
+
 Route.get('/', () => {
   return { greeting: 'Hello world in JSON' }
 })
