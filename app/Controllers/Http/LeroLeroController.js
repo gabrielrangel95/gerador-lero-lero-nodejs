@@ -1,5 +1,6 @@
 'use strict'
-import LeroLero from 'App/Models/LeroLero';
+
+const LeroLero = use('App/Models/LeroLero')
 
 class LeroLeroController {
 
